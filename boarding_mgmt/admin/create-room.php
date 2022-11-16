@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting (E_ALL^E_NOTICE);
 session_start();
 include('includes/config.php');
 include('includes/checklogin.php');
@@ -17,7 +17,7 @@ $stmt1->store_result();
 $row_cnt=$stmt1->num_rows;;
 if($row_cnt>0)
 {
-echo"<script>alert('Room alreadt exist');</script>";
+echo"<script>alert('Room already exist');</script>";
 }
 else
 {

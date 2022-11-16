@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting (E_ALL^E_NOTICE);
 session_start();
 include('includes/config.php');
 include('includes/checklogin.php');
@@ -14,7 +14,7 @@ $query="update courses set course_code=?,course_sn=?,course_fn=? where id=?";
 $stmt = $mysqli->prepare($query);
 $rc=$stmt->bind_param('sssi',$coursecode,$coursesn,$coursefn,$id);
 $stmt->execute();
-echo"<script>alert('Course has been Updated successfully');</script>";
+echo"<script>alert('Package has been Updated successfully');</script>";
 }
 
 ?>

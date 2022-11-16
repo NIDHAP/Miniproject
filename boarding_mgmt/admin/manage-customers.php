@@ -106,7 +106,7 @@ while($row=$res->fetch_object())
 <td><?php echo $row->seater;?></td>
 <td><?php echo $row->stayfrom;?></td>
 <td>
-<a href="javascript:void(0);"  onClick="popUpWindow('http://localhost/hostel/admin/full-profile.php?id=<?php echo $row->id;?>');" title="View Full Details"><i class="fa fa-desktop"></i></a>&nbsp;&nbsp;
+<a href="javascript:void(0);"  onClick="popUpWindow('http://localhost/boarding_mgmt/admin/full-profile.php?id=<?php echo $row->id;?>');" title="View Full Details"><i class="fa fa-desktop"></i></a>&nbsp;&nbsp;
 <a href="manage-customers.php?del=<?php echo $row->id;?>" title="Delete Record" onclick="return confirm("Do you want to delete");"><i class="fa fa-close"></i></a></td>
 										</tr>
 									<?php

@@ -1,6 +1,6 @@
-<?php
+<?php error_reporting(E_ALL ^ E_DEPRECATED);
 session_start();
-//include("includes/config.php");
+include("includes/config.php");
 $mysql_hostname = "localhost";
 $mysql_user = "root";
 $mysql_password = "";

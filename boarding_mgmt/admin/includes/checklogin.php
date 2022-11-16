@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting (E_ALL^E_NOTICE);
 function check_login()
 {
 if(strlen($_SESSION['id'])==0)

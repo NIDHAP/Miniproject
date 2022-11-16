@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting (E_ALL^E_NOTICE);
 session_start();
 include('includes/config.php');
 include('includes/checklogin.php');
@@ -114,7 +114,7 @@ $('#fpm').val(data);
 											
 										
 <div class="form-group">
-<label class="col-sm-4 control-label"><h4 style="color: green" align="left">Room Related info </h4> </label>
+<label class="col-sm-4 control-label"><h4 style="color: green; align=left;">Room Related info </h4> </label>
 </div>
 
 <div class="form-group">
@@ -189,7 +189,7 @@ while($row=$res->fetch_object())
 
 
 <div class="form-group">
-<label class="col-sm-2 control-label"><h4 style="color: green" align="left">Personal info </h4> </label>
+<label class="col-sm-2 control-label"><h4 style="color: green; align=left;">Personal info </h4> </label>
 </div>
 
 <div class="form-group">
@@ -294,7 +294,7 @@ while($row=$res->fetch_object())
 </div>	
 
 <div class="form-group">
-<label class="col-sm-3 control-label"><h4 style="color: green" align="left">Correspondense Address </h4> </label>
+<label class="col-sm-3 control-label"><h4 style="color: green; align=left;">Correspondense Address </h4> </label>
 </div>
 
 
@@ -337,7 +337,7 @@ while($row=$res->fetch_object())
 </div>	
 
 <div class="form-group">
-<label class="col-sm-3 control-label"><h4 style="color: green" align="left">Permanent Address </h4> </label>
+<label class="col-sm-3 control-label"><h4 style="color: green; align=left;">Permanent Address </h4> </label>
 </div>
 
 

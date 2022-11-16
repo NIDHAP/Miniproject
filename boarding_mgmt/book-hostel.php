@@ -114,7 +114,7 @@ $uid=$_SESSION['login'];
 				$stmt->close();
 				if($rs)
 				{ ?>
-			<h3 style="color: red" align="left">Hostel already booked by you</h3>
+			<h3 style="color: red" align="left">Room already booked by you</h3>
 				<?php }
 				else{
 							echo "";
@@ -206,10 +206,10 @@ while($row=$res->fetch_object())
 </div>
 
 <div class="form-group">
-<label class="col-sm-2 control-label">course </label>
+<label class="col-sm-2 control-label">Package </label>
 <div class="col-sm-8">
 <select name="course" id="course" class="form-control" required> 
-<option value="">Select Course</option>
+<option value="">Select Package</option>
 <?php $query ="SELECT * FROM courses";
 $stmt2 = $mysqli->prepare($query);
 $stmt2->execute();

@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting (E_ALL^E_NOTICE);
 session_start();
 include('includes/config.php');
 include('includes/checklogin.php');
@@ -22,7 +22,7 @@ if(isset($_POST['changepwd']))
   $np=$_POST['newpassword'];
   $aid=$_SESSION['id'];
   $udate=date('Y-m-d');
-	$sql="SELECT password FROM admin where password=?";
+	$sql="SELECT password FROM 'admin' where password=?";
 	$chngpwd = $mysqli->prepare($sql);
 	$chngpwd->bind_param('s',$op);
 	$chngpwd->execute();

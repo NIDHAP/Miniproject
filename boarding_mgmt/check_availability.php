@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting (E_ALL^E_NOTICE);
 require_once("includes/config.php");
 if(!empty($_POST["emailid"])) {
 	$email= $_POST["emailid"];

@@ -36,7 +36,7 @@ check_login();
 					<div class="col-md-12">
 						<h2 class="page-title">Access Log</h2>
 						<div class="panel panel-default">
-							<div class="panel-heading">All Courses Details</div>
+							<div class="panel-heading">All Login Details</div>
 							<div class="panel-body">
 								<table id="zctb" class="display table table-striped table-bordered table-hover" cellspacing="0" width="100%">
 									<thead>

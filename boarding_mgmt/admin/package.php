@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting (E_ALL^E_NOTICE);
 session_start();
 include('includes/config.php');
 include('includes/checklogin.php');
@@ -13,7 +13,7 @@ $query="insert into  courses (course_code,course_sn,course_fn) values(?,?,?)";
 $stmt = $mysqli->prepare($query);
 $rc=$stmt->bind_param('sss',$coursecode,$coursesn,$coursefn);
 $stmt->execute();
-echo"<script>alert('Course has been added successfully');</script>";
+echo"<script>alert('Package has been added successfully');</script>";
 }
 
 ?>

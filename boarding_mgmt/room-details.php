@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL ^ E_DEPRECATED);
 session_start();
 include('includes/config.php');
 include('includes/checklogin.php');
@@ -69,7 +69,7 @@ while($row=$res->fetch_object())
 
 <tr>
 <td colspan="4"><h4>Room Realted Info</h4></td>
-<td><a href="javascript:void(0);"  onClick="popUpWindow('http://localhost/hostel/full-profile.php?id=<?php echo $row->emailid;?>');" title="View Full Details">Print Data</a></td>
+<td><a href="javascript:void(0);"  onClick="popUpWindow('http://localhost/boarding_mgmt/full-profile.php?id=<?php echo $row->emailid;?>');" title="View Full Details">Print Data</a></td>
 </tr>
 <tr>
 <td colspan="6"><b>Reg no. :<?php echo $row->postingDate;?></b></td>
