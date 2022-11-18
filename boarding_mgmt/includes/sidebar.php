@@ -1,3 +1,4 @@
+<?php error_reporting (E_ALL^E_NOTICE);?>
 <nav class="ts-sidebar">
 			<ul class="ts-sidebar-menu">
 			

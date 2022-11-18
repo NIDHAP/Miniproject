@@ -1,4 +1,4 @@
-<?php 
+<?php error_reporting (E_ALL^E_NOTICE);
 session_start();
 $aid=$_SESSION['id'];
 require_once("includes/config.php");
@@ -21,7 +21,7 @@ else
 if(!empty($_POST["oldpassword"])) 
 {
 $pass=$_POST["oldpassword"];
-$result ="SELECT password FROM userregistration WHERE password=?";
+$result ="SELECT password FROM admin WHERE password=?";
 $stmt = $mysqli->prepare($result);
 $stmt->bind_param('s',$pass);
 $stmt->execute();

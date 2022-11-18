@@ -43,7 +43,7 @@ $query1="insert into  userregistration(regNo,firstName,middleName,lastName,gende
 $stmt1= $mysqli->prepare($query1);
 $stmt1->bind_param('sssssiss',$regno,$fname,$mname,$lname,$gender,$contactno,$emailid,$contactno);
 $stmt1->execute();
-echo"<script>alert('Student Succssfully register');</script>";
+echo"<script>alert('Customer Succssfully register');</script>";
 }
 ?>
 

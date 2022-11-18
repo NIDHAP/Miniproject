@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting (E_ALL^E_NOTICE);
 session_start();
 include('includes/config.php');
 if(isset($_POST['login']))
@@ -63,7 +63,7 @@ $stmt=$mysqli->prepare("SELECT email,contactNo,password FROM userregistration WH
 									<input type="text" placeholder="Contact no" name="contact" class="form-control mb">
 									
 
-									<input type="submit" name="login" class="btn btn-primary btn-block" value="login" >
+									<input type="submit" name="login" class="btn btn-primary btn-block" value="Login" >
 								</form>
 							</div>
 						</div>

@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting (E_ALL^E_NOTICE);
 $DB_host = "localhost";
 $DB_user = "root";
 $DB_pass = "";

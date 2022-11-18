@@ -1,5 +1,5 @@
 
-<?php if($_SESSION['id'])
+<?php error_reporting (E_ALL^E_NOTICE); if($_SESSION['id'])
 { ?><div class="brand clearfix">
 		<a href="#" class="logo" style="font-size:15px;">Boarding Management System</a>
 		<span class="menu-btn"><i class="fa fa-bars"></i></span>

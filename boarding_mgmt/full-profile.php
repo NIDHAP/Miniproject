@@ -1,4 +1,4 @@
-<?php error_reporting(E_ALL ^ E_DEPRECATED);
+<?php error_reporting(E_ALL^E_NOTICE);
 session_start();
 include("includes/config.php");
 $mysql_hostname = "localhost";

@@ -77,6 +77,7 @@ return true;
 	<div class="ts-main-content">
 		<?php include('includes/sidebar.php');?>
 		<div class="content-wrapper">
+		<div class="login-page bk-img" style="background-image: url(img/login-bg.jpg);">
 			<div class="container-fluid">
 
 				<div class="row">
@@ -96,12 +97,12 @@ return true;
 									<input type="password" placeholder="Password" name="password" class="form-control mb">
 									
 
-									<input type="submit" name="login" class="btn btn-primary btn-block" value="login" >
+									<input type="submit" name="login" class="btn btn-primary btn-block" value="Login" >
 								</form>
 							</div>
 						</div>
-						<div class="text-center text-light" style="color:black;">
-							<a href="forgot-password.php" style="color:black;">Forgot password?</a>
+						<div class="text-center text-light" style="color:white;">
+							<a href="forgot-password.php" style="color:white;">Forgot password?</a>
 						</div>
 					</div>
 				</div>

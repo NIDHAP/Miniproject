@@ -1,8 +1,10 @@
+<?php error_reporting (E_ALL^E_NOTICE);?>
 <nav class="ts-sidebar">
 			<ul class="ts-sidebar-menu">
 			
 				<li class="ts-label">Main</li>
 				<li><a href="dashboard.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+					<li><a href="admin-profile.php"><i class="fa fa-user"></i>Profile</a></li>
 					<li><a href="#"><i class="fa fa-files-o"></i> Package</a>
 					<ul>
 						<li><a href="package.php">Add Package</a></li>

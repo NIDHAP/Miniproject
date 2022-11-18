@@ -21,8 +21,8 @@ if(isset($_POST['changepwd']))
   $op=$_POST['oldpassword'];
   $np=$_POST['newpassword'];
   $aid=$_SESSION['id'];
-  $udate=date('Y-m-d');
-	$sql="SELECT password FROM 'admin' where password=?";
+  $udate=date('Y-m-d');;
+	$sql="SELECT password FROM admin where password=?";
 	$chngpwd = $mysqli->prepare($sql);
 	$chngpwd->bind_param('s',$op);
 	$chngpwd->execute();
@@ -31,9 +31,9 @@ if(isset($_POST['changepwd']))
 	if($row_cnt>0)
 	{
 		$con="update admin set password=?,updation_date=?  where id=?";
-		$chngpwd1 = $mysqli->prepare($con);
-		$chngpwd1->bind_param('ssi',$np,$udate,$aid);
-  		$chngpwd1->execute();
+$chngpwd1 = $mysqli->prepare($con);
+$chngpwd1->bind_param('ssi',$np,$udate,$aid);
+  	$chngpwd1->execute();
 		$_SESSION['msg']="Password Changed Successfully !!";
 	}
 	else
@@ -153,7 +153,7 @@ $aid=$_SESSION['id'];
 											<?php } ?>
 											<div class="hr-dashed"></div>
 											<div class="form-group">
-												<label class="col-sm-4 control-label">old Password </label>
+												<label class="col-sm-4 control-label">Old Password </label>
 												<div class="col-sm-8">
 				<input type="password" value="" name="oldpassword" id="oldpassword" class="form-control" onBlur="checkpass()" required="required">
 									 <span id="password-availability-status" class="help-block m-b-none" style="font-size:12px;"></span> </div>

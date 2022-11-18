@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting (E_ALL^E_NOTICE);
 include('includes/pdoconfig.php');
 if(!empty($_POST["roomid"])) 
 {	
